@@ -1,5 +1,5 @@
 module Mixer
-  class Channel < BaseModel
+  class ChannelAdvanced < BaseModel
     attribute :id,                     Integer
     attribute :user_id,                Integer
     attribute :token,                  String
@@ -29,6 +29,8 @@ module Mixer
     attribute :has_transcodes,         Boolean
     attribute :vods_enabled,           Boolean
     attribute :costream_id,            String
+    attribute :type,                   GameType
+    attribute :user,                   UserWithGroups
     attribute :created_at,             DateTime
     attribute :updated_at,             DateTime
     attribute :deleted_at,             DateTime

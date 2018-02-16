@@ -1,12 +1,8 @@
 module Mixer
-  class Achievement
-    attr_accessor :slug, :name, :description, :sparks
-
-    def initialize(data)
-      @slug        = data['slug']
-      @name        = data['name']
-      @description = data['description']
-      @sparks      = data['sparks']
-    end
+  class Achievement < BaseModel
+    attribute :slug,        String
+    attribute :name,        String
+    attribute :description, String
+    attribute :sparks,      Integer
   end
 end

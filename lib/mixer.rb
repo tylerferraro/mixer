@@ -1,16 +1,17 @@
 require 'faraday'
 require 'faraday_middleware'
 require 'json'
+require 'virtus'
 
 require 'mixer/client'
 require 'mixer/version'
+require 'mixer/models/base_model'
 require 'mixer/models/achievement'
 require 'mixer/models/broadcast'
 require 'mixer/models/channel'
 require 'mixer/resources/base_resource'
 require 'mixer/resources/achievement_resource'
 require 'mixer/resources/broadcast_resource'
-require 'mixer/resoures/channel_resource'
 
 
 module Mixer
