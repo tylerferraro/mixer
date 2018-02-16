@@ -1,34 +1,38 @@
 # Mixer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mixer`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem wraps the [Mixer](https://mixer.com) API [https://dev.mixer.com/rest.html](https://dev.mixer.com/rest.html)
 
-TODO: Delete this and the text above, and describe your gem
+This is currently under development and is in Alpha stages. The instructions below are filler used to drive architecture and may not currently work.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+```ruby
+gem install mixer
+```
+
+Using bundler:
 
 ```ruby
 gem 'mixer'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mixer
-
 ## Usage
 
-TODO: Write usage instructions here
+### Configure your client
 
-## Development
+```ruby
+mixer = Mixer::Client.new(token: 'my_token')
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+### Query API
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+# Returns array of achievement objects
+achievements = mixer.achievements.all
+
+# Returns specified channel
+channel = mixer.channels.find(1)
+```
 
 ## Contributing
 
