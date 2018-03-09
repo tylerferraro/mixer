@@ -4,7 +4,7 @@ module Mixer
       response = get("broadcasts/#{id}", params)
       if response.success?
         data = JSON.parse(response.body)
-        broadcast = Broadcast.new(data)
+        Broadcast.new(data)
       else
         # Error
       end
@@ -14,14 +14,10 @@ module Mixer
       response = get('broadcasts/current', params)
       if response.success?
         data = JSON.parse(response.body)
-        broadcast = Broadcast.new(data)
+        Broadcast.new(data)
       else
         # Error
       end
     end
-
-    # TODO
-    # GET /broadcasts/{broadcastId}/manifest.{type}
-    # This endpoint is identical to /channels/{id}/manifest.{format}
   end
 end

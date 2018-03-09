@@ -1,4 +1,4 @@
-require 'simplecov'; SimpleCov.start
+require 'simplecov'
 require 'bundler/setup'
 require 'mixer'
 

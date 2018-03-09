@@ -4,7 +4,7 @@ module Mixer
       response = get('achievements')
       if response.success?
         data = JSON.parse(response.body)
-        achievements = data.map { |opts| Achievement.new(opts) }
+        data.map { |opts| Achievement.from_api(opts) }
       else
         # Error
       end

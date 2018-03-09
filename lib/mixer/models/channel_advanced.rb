@@ -36,4 +36,3 @@ module Mixer
     attribute :deleted_at,             DateTime
   end
 end
-

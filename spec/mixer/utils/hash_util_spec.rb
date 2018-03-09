@@ -17,7 +17,7 @@ RSpec.describe Mixer::HashUtil do
 
   describe '.transform_keys' do
     it 'transforms keys based on block' do
-      result = described_class.transform_keys(hash) { |key| key.to_s }
+      result = described_class.transform_keys(hash, &:to_s)
       expect(result).to eq(transformed_hash)
     end
   end

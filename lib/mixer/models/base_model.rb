@@ -4,7 +4,9 @@ module Mixer
 
     class << self
       def from_api(data)
-        opts = HashUtil.transform_keys(data) { |key| StringUtil.serpentize(key).to_sym }
+        opts = HashUtil.transform_keys(data) do |key|
+          StringUtil.serpentize(key).to_sym
+        end
         self.class.new(opts)
       end
     end
