@@ -1,4 +1,4 @@
-# Mixer
+# Mixer [![Build Status](https://travis-ci.org/tylerferraro/mixer.svg?branch=master)](https://travis-ci.org/tylerferraro/mixer)
 
 This gem wraps the [Mixer](https://mixer.com) API [https://dev.mixer.com/rest.html](https://dev.mixer.com/rest.html)
 
