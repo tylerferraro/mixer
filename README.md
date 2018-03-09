@@ -1,4 +1,5 @@
-# Mixer [![Build Status](https://travis-ci.org/tylerferraro/mixer.svg?branch=master)](https://travis-ci.org/tylerferraro/mixer)
+# Mixer
+[![Build Status](https://travis-ci.org/tylerferraro/mixer.svg?branch=master)](https://travis-ci.org/tylerferraro/mixer) [![Maintainability](https://api.codeclimate.com/v1/badges/fdae37b40a359f2fec49/maintainability)](https://codeclimate.com/github/tylerferraro/mixer/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/fdae37b40a359f2fec49/test_coverage)](https://codeclimate.com/github/tylerferraro/mixer/test_coverage)
 
 This gem wraps the [Mixer](https://mixer.com) API [https://dev.mixer.com/rest.html](https://dev.mixer.com/rest.html)
 

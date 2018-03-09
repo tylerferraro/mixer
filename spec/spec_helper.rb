@@ -1,5 +1,5 @@
+require 'simplecov'; SimpleCov.start
 require 'bundler/setup'
-require 'simplecov'
 require 'mixer'
 
 RSpec.configure do |config|
