@@ -2,7 +2,7 @@ module Mixer
   class StringUtil
     class << self
       def camelize(term)
-        term.to_s.gsub(/_([a-z])/) { |char| "#{char.capitalize}" }
+        term.to_s.gsub(/_([a-z0-9])/) { |match| match[1].capitalize }
       end
 
       def serpentize(term)
