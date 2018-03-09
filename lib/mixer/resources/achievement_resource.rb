@@ -1,7 +1,7 @@
 module Mixer
   class AchievementResource < BaseResource
-    def all(params = {})
-      response = get('achievements', params)
+    def all
+      response = get('achievements')
       if response.success?
         data = JSON.parse(response.body)
         achievements = data.map { |opts| Achievement.new(opts) }

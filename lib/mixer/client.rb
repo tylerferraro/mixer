@@ -3,7 +3,8 @@ module Mixer
     class << self
       def resources
         {
-          achievements: AchievementResource
+          achievements: AchievementResource,
+          broadcasts: BroadcastResource
         }
       end
     end

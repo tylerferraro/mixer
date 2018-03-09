@@ -12,6 +12,8 @@ require 'mixer/models/channel'
 require 'mixer/resources/base_resource'
 require 'mixer/resources/achievement_resource'
 require 'mixer/resources/broadcast_resource'
+require 'mixer/utils/hash_util'
+require 'mixer/utils/string_util'
 
 
 module Mixer
