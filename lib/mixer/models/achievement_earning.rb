@@ -1,5 +1,5 @@
 module Mixer
-  class AchievementEarning < BaseModel
+  class AchievementEarning < Model
     attribute :id,          Integer
     attribute :earned,      Boolean
     attribute :progress,    Integer

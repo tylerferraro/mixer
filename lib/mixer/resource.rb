@@ -1,5 +1,5 @@
 module Mixer
-  class BaseResource
+  class Resource
     extend Forwardable
     def_delegators :@connection, :get, :post, :put, :delete
 

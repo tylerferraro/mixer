@@ -1,5 +1,5 @@
 module Mixer
-  class CheckoutItem < BaseModel
+  class CheckoutItem < Model
     attribute :id,       Integer
     attribute :quantity, Integer
   end

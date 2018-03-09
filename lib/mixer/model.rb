@@ -1,5 +1,5 @@
 module Mixer
-  class BaseModel
+  class Model
     include Virtus.model
 
     class << self

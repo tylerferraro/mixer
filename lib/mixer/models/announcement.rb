@@ -1,5 +1,5 @@
 module Mixer
-  class Announcement < BaseModel
+  class Announcement < Model
     attribute :message,  String
     attribute :timeout,  Integer
     attribute :sound,    String

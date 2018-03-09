@@ -1,4 +1,4 @@
 module Mixer
-  class Broadcast
+  class Broadcast < Model
   end
 end

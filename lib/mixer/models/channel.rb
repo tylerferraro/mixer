@@ -1,5 +1,5 @@
 module Mixer
-  class Channel < BaseModel
+  class Channel < Model
     attribute :id,                     Integer
     attribute :user_id,                Integer
     attribute :token,                  String

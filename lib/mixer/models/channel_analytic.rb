@@ -1,5 +1,5 @@
 module Mixer
-  class ChannelAnalytic < BaseModel
+  class ChannelAnalytic < Model
     attribute :channel, Integer
     attribute :time,    DateTime
   end

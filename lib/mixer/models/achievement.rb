@@ -1,5 +1,5 @@
 module Mixer
-  class Achievement < BaseModel
+  class Achievement < Model
     attribute :slug,        String
     attribute :name,        String
     attribute :description, String

@@ -1,5 +1,5 @@
 module Mixer
-  class CPMAnalytic < BaseModel
+  class CPMAnalytic < Model
     attribute :impressions, Integer
     attribute :payout,      Integer
     attribute :channel,     Integer

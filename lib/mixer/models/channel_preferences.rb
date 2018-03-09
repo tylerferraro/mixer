@@ -1,5 +1,5 @@
 module Mixer
-  class ChannelPreferences < BaseModel
+  class ChannelPreferences < Model
     attribute :sharetext,                       String
     attribute :channel_links_allowed,           Boolean
     attribute :channel_links_clickable,         Boolean

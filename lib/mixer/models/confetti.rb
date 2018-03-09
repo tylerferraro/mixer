@@ -1,5 +1,5 @@
 module Mixer
-  class Confetti
+  class Confetti < Model
     attribute :id,         Integer
     attribute :channel_id, Integer
     attribute :settings,   Setting

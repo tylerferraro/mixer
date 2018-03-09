@@ -1,12 +1,10 @@
 module Mixer
-  class BroadcastResource < BaseResource
+  class BroadcastResource < Resource
     def find(id, params = {})
       response = get("broadcasts/#{id}", params)
       if response.success?
         data = JSON.parse(response.body)
         Broadcast.new(data)
-      else
-        # Error
       end
     end
 
@@ -15,8 +13,6 @@ module Mixer
       if response.success?
         data = JSON.parse(response.body)
         Broadcast.new(data)
-      else
-        # Error
       end
     end
   end
