@@ -7,7 +7,8 @@ module Mixer
         opts = HashUtil.transform_keys(data) do |key|
           StringUtil.serpentize(key).to_sym
         end
-        self.class.new(opts)
+
+        new(opts)
       end
     end
   end

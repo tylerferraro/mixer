@@ -1,9 +1,14 @@
+# Resources
 require 'faraday'
 require 'faraday_middleware'
 require 'json'
+
+# Models
 require 'virtus'
 
+# Library
 require 'mixer/client'
+require 'mixer/connection'
 require 'mixer/model'
 require 'mixer/resource'
 require 'mixer/version'
@@ -21,11 +26,6 @@ module Mixer
 
     def configure
       yield self
-    end
-
-    # Only Version 1.0 API currently available on Mixer
-    def api_version
-      '1.0'.freeze
     end
   end
 end

@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mixer.com/api/v1/achievements
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.12.2
+      content-type:
+      - application/json; charset=utf-8
+      ms-cv:
+      - 37edIRN9NJsWsz60x8EyqA.0
+      cache-control:
+      - no-cache
+      x-cdn-host:
+      - app33.dal09.mixer.com
+      via:
+      - 1.1 varnish, 1.1 varnish
+      transfer-encoding:
+      - chunked
+      accept-ranges:
+      - bytes
+      date:
+      - Sat, 10 Mar 2018 06:20:41 GMT
+      age:
+      - '0'
+      connection:
+      - close
+      x-served-by:
+      - cache-dfw18630-DFW, cache-lax8644-LAX
+      x-cache:
+      - MISS, MISS
+      x-cache-hits:
+      - 0, 0
+      x-timer:
+      - S1520662841.359160,VS0,VE42
+      vary:
+      - accept-encoding, Accept-Encoding
+      x-csrf-token:
+      - 2536e8aca82fcaf74c8d5683f11dafd0d7b8d806
+      set-cookie:
+      - __bcsrf=2536e8aca82fcaf74c8d5683f11dafd0d7b8d806; HttpOnly; secure; path=/;
+        Expires=Mon, 09 Apr 2018 06:20:41 GMT;
+      access-control-allow-origin:
+      - "*"
+      access-control-expose-headers:
+      - x-total-count, x-rate-limit, x-ratelimit-remaining, x-ratelimit-reset, x-warning,
+        x-deprecated, x-deprecated-date, link, x-cache, x-cache-hits, content-length,
+        content-type, content-range, range, ms-cv
+      access-control-allow-methods:
+      - GET, HEAD, POST, PUT, DELETE, PATCH, OPTIONS
+      access-control-allow-headers:
+      - content-length, content-type, authorization, x-xbl-authorization, ms-cv
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sic2x1ZyI6ImFscGhhLXVzZXIiLCJuYW1lIjoiQWxwaGEiLCJkZXNjcmlwdGlvbiI6IkJlIGEgcGFydCBvZiBCZWFt4oCZcyBBbHBoYSB0ZXN0aW5nIHBoYXNlLiIsInNwYXJrcyI6MH0seyJzbHVnIjoiYmVhbS1tZS11cCIsIm5hbWUiOiJCZWFtTWVVcCIsImRlc2NyaXB0aW9uIjoiVGhhbmtzIGZvciBzaWduaW5nIHVwIGZvciBCZWFtISIsInNwYXJrcyI6MH0seyJzbHVnIjoiYmV0YS11c2VyIiwibmFtZSI6IkJldGEiLCJkZXNjcmlwdGlvbiI6IkJlIGEgcGFydCBvZiBCZWFt4oCZcyBCZXRhIHVzZXIgZ3JvdXAuIiwic3BhcmtzIjowfSx7InNsdWciOiJmb2xsb3dlcnMtZ29sZCIsIm5hbWUiOiJGb2xsb3dlcnMgR29sZCIsImRlc2NyaXB0aW9uIjoiSGF2ZSBhdCBsZWFzdCBvbmUgdGhvdXNhbmRzIGZvbGxvd2Vycy4iLCJzcGFya3MiOjB9LHsic2x1ZyI6ImZvbGxvd2Vycy1wbGF0IiwibmFtZSI6IkZvbGxvd2VycyBQbGF0aW51bSIsImRlc2NyaXB0aW9uIjoiSGF2ZSBhdCBsZWFzdCB0ZW4gdGhvdXNhbmQgZm9sbG93ZXJzLiIsInNwYXJrcyI6MH0seyJzbHVnIjoiZm9sbG93ZXJzLXNpbHZlciIsIm5hbWUiOiJGb2xsb3dlcnMgU2lsdmVyIiwiZGVzY3JpcHRpb24iOiJIYXZlIGF0IGxlYXN0IG9uZSBodW5kcmVkIGZvbGxvd2Vycy4iLCJzcGFya3MiOjB9LHsic2x1ZyI6ImhlbHBlci1nb2xkIiwibmFtZSI6IkhlbHBlciBHb2xkIiwiZGVzY3JpcHRpb24iOiJCZSBtb2RkZWQgaW4gNSBjaGFubmVscy4iLCJzcGFya3MiOjB9LHsic2x1ZyI6ImhlbHBlci1zaWx2ZXIiLCJuYW1lIjoiSGVscGVyIFNpbHZlciIsImRlc2NyaXB0aW9uIjoiQmUgbW9kZGVkIGluIGF0IGxlYXN0IG9uZSBjaGFubmVsLiIsInNwYXJrcyI6MH0seyJzbHVnIjoib2ctYmVhbS1tZW1iZXIiLCJuYW1lIjoiT0cgQmVhbSBNZW1iZXIiLCJkZXNjcmlwdGlvbiI6IkFuIG9yaWdpbmFsIG1lbWJlciBvZiB0aGUgQmVhbSBjb21tdW5pdHkuIiwic3BhcmtzIjowfSx7InNsdWciOiJzdGFsa2VyLWdvbGQiLCJuYW1lIjoiU3RhbGtlciBHb2xkIiwiZGVzY3JpcHRpb24iOiJGb2xsb3cgYXQgbGVhc3Qgb25lIGh1bmRyZWQgY2hhbm5lbHMuIiwic3BhcmtzIjowfSx7InNsdWciOiJzdGFsa2VyLXNpbHZlciIsIm5hbWUiOiJTdGFsa2VyIFNpbHZlciIsImRlc2NyaXB0aW9uIjoiRm9sbG93IDEwIGNoYW5uZWxzLiIsInNwYXJrcyI6MH1d
+    http_version: 
+  recorded_at: Sat, 10 Mar 2018 06:20:41 GMT
+recorded_with: VCR 4.0.0
