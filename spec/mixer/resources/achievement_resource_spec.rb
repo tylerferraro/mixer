@@ -5,9 +5,7 @@ RSpec.describe Mixer::AchievementResource do
 
   describe '#all' do
     let(:achievements) do
-      VCR.use_cassette('achievements') do
-        client.achievements.all
-      end
+      VCR.use_cassette('achievements') { client.achievements.all }
     end
 
     it 'gets a list of all achievements' do

@@ -2,12 +2,12 @@ module Mixer
   class BroadcastResource < Resource
     def find(id, params = {})
       data = get("broadcasts/#{id}", params)
-      Broadcast.new(data)
+      Broadcast.from_api(data)
     end
 
-    def current(params = {})
-      data = get('broadcasts/current', params)
-      Broadcast.new(data)
+    def current
+      data = get('broadcasts/current')
+      Broadcast.from_api(data)
     end
   end
 end
